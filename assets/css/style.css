@@ -1,0 +1,137 @@
+/* Soft Dark Mode için Genel Stiller */
+body {
+    background-color: #18191A; /* Yumuşak Koyu Arkaplan (Göz Yormayan) */
+    color: #E4E6EB; /* Açık Gri Metin (Yüksek Okunabilirlik) */
+    font-family: 'Poppins', sans-serif; 
+    padding-top: 70px; /* Navbar boşluğu */
+}
+
+/* Renk Paleti (Soft Dark Mode'a Uygun) */
+:root {
+    --bs-primary: #007ACC; /* Koyu Mavi / Cam Göbeği (Vurgu Rengi) */
+    --bs-dark: #E4E6EB; /* Genel Açık Metin Rengi */
+    --card-bg: #242526; /* Kart/Menü Arkaplanı (Biraz daha koyu) */
+    --input-bg: #3A3B3C; /* Form Alanı Arkaplanı */
+    --navbar-bg: #242526; /* Navbar'ın Üst Bandı */
+}
+
+/* Scroll Davranışı */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--navbar-bg) !important; /* Kart Rengi ile Eşleşti */
+    border-bottom: 1px solid #3A3B3C;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); 
+}
+.navbar-brand {
+    color: var(--bs-dark) !important;
+    font-weight: 700;
+}
+.nav-link {
+    color: #B0B3B8 !important; /* Normal linkler nötr gri */
+    transition: color 0.3s ease;
+}
+/* Aktif ve Hover Link Stili */
+.nav-link:hover, .nav-link.active {
+    color: var(--bs-primary) !important; /* Aktif/Hover Mavi */
+    font-weight: 600; 
+}
+
+/* Navbar'daki İkon ve Buton Rengi */
+.navbar .btn, .navbar a.btn, .navbar .fa-brands, .navbar .fa-solid {
+    color: var(--bs-dark) !important; /* İkon rengini açık yapıyoruz */
+    border-color: #555555 !important;
+}
+.navbar .btn:hover {
+    color: #FFFFFF !important;
+    background-color: var(--bs-primary) !important;
+}
+
+/* Mobil Menü Arkaplanı */
+.navbar-collapse {
+    background-color: var(--card-bg) !important; /* Kart Rengiyle Eşleşti */
+}
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: var(--card-bg) !important; 
+        padding: 10px 0;
+        border-top: 1px solid #3A3B3C;
+    }
+}
+
+
+/* Kartlar ve Bileşenler */
+.card, .list-group-item, .p-4.rounded {
+    background-color: var(--card-bg); /* Kart Arkaplanı */
+    border: 1px solid #3A3B3C !important; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Başlıklar */
+h1, h2, h3, h4, h5 {
+    color: var(--bs-dark); /* Açık Metin */
+    font-weight: 700;
+}
+.text-primary {
+    color: var(--bs-primary) !important; /* Vurgu Rengi Mavi */
+}
+
+/* Metin Okunabilirlik Düzeltmeleri */
+.card p, 
+.card ul li,
+/* Mail, Numara vb. de dahil olmak üzere tüm koyu renk varsayılan metinleri açık renge ayarlıyoruz */
+.text-body, a { 
+    color: var(--bs-dark) !important; 
+}
+.text-muted {
+    color: #B0B3B8 !important; /* Alt metinler nötr gri */
+}
+
+/* Butonlar */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: #FFFFFF;
+    transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #005FA3; 
+    border-color: #005FA3;
+}
+/* btn-outline-dark butonu artık Dark Mode'da kullanıma uygun */
+.btn-outline-dark { 
+    color: var(--bs-primary);
+    border-color: #B0B3B8; 
+}
+.btn-outline-dark:hover {
+    background-color: var(--bs-primary);
+    color: #FFFFFF; 
+}
+
+/* Proje Kart Efekti */
+.project-card:hover {
+    cursor: pointer;
+    transform: translateY(-4px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Form Alanları (Mail, Numara vs. de dahil olmak üzere okunuyor) */
+.form-control {
+    background-color: var(--input-bg); /* Koyu arkaplan */
+    border: 1px solid #555555; 
+    color: var(--bs-dark); /* Açık metin */
+}
+.form-control:focus {
+    background-color: var(--input-bg); 
+    border-color: var(--bs-primary);
+    /* Box Shadow rengi Mavi Vurgu Rengi ile güncellendi */
+    box-shadow: 0 0 0 0.25rem rgba(0, 122, 204, 0.25); 
+}
+
+.card-title {
+    color: var(--bs-primary) !important;
+}
