@@ -4,6 +4,29 @@
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         
         <div class="col">
+            <div class="card h-100 shadow-sm border-0 project-card" data-bs-toggle="modal" data-bs-target="#projectModalDemand">
+                <img src="assets/img/demand-forecasting.png" class="card-img-top" alt="Demand Forecasting Datathon">
+                <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold" 
+                        data-lang-en="Demand Forecasting Datathon" 
+                        data-lang-tr="Talep Tahmini Datathon">
+                        Demand Forecasting Datathon
+                    </h5>
+                    <p class="card-text text-muted" 
+                        data-lang-en="12-month SKU & category level forecasting challenge for a major home appliances company (hybrid AutoGluon + StatsForecast)." 
+                        data-lang-tr="Büyük bir ev aletleri firması için 12 aylık SKU ve kategori bazında tahminleme datathon’u (hibrit AutoGluon + StatsForecast).">
+                        12-month SKU & category level forecasting challenge for a major home appliances company (hybrid AutoGluon + StatsForecast).
+                    </p>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                    <a href="https://github.com/kaganmart9/demand-forecasting-challenge" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark me-2">
+                        <i class="fab fa-github me-1"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
             <div class="card h-100 shadow-sm border-0 project-card" data-bs-toggle="modal" data-bs-target="#projectModalPharma">
                 <img src="assets/img/streamlit_1.jpg" class="card-img-top" alt="Pharmaceutical Sales Forecasting">
                 <div class="card-body">
@@ -18,7 +41,7 @@
                         End-to-end time-series analysis and machine learning project for predicting future pharmaceutical sales.
                     </p>
                 </div>
-                <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+                <div class="card-footer bg-transparent border-0 d-flex justify-content384-between align-items-center">
                     <div>
                         <a href="https://github.com/kaganmart9/pharma-forecast" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark me-2">
                             <i class="fab fa-github me-1"></i> GitHub
@@ -30,8 +53,6 @@
                 </div>
             </div>
         </div>
-
-
 
         <div class="col">
             <div class="card h-100 shadow-sm border-0 project-card" data-bs-toggle="modal" data-bs-target="#projectModal1">
@@ -66,6 +87,41 @@
     </div>
 </div>
 
+<!-- ============ TÜM MODALLAR ============ -->
+
+<div class="modal fade" id="projectModalDemand" tabindex="-1" aria-labelledby="projectModalDemandLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+            <div class="modal-header border-bottom-0">
+                <h5 class="modal-title text-primary" id="projectModalDemandLabel" 
+                    data-lang-en="Demand Forecasting Datathon - Details" 
+                    data-lang-tr="Talep Tahmini Datathon - Detaylar">
+                    Demand Forecasting Datathon - Details
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/demand-forecasting.png" class="img-fluid mb-3 rounded shadow" alt="Demand Forecasting Datathon">
+
+                <p class="fw-bold text-primary" data-lang-en="Technologies:" data-lang-tr="Kullanılan Teknolojiler:">Technologies:</p>
+                <p>Python, Pandas, AutoGluon, StatsForecast (TSB), Feature Engineering, Time-Series Segmentation</p>
+
+                <p class="fw-bold text-primary" data-lang-en="Description:" data-lang-tr="Açıklama:">Description:</p>
+                <p data-lang-en="Participated in a demand forecasting datathon organized for a leading European home appliances manufacturer. Developed a complete end-to-end solution that generates 12-month SKU and category-level forecasts using a hybrid approach: AutoGluon for regular products, StatsForecast TSB for intermittent demand, and simple mean for new launches. Implemented automatic product segmentation, phase-out detection, extensive feature engineering, custom RWMAPE metric, and hierarchical aggregation. Ranked among the top solutions with a production-ready pipeline." 
+                   data-lang-tr="Avrupa’nın önde gelen bir ev aletleri üreticisinin düzenlediği talep tahmini datathon’una katıldım. Hibrit bir yaklaşımla (AutoGluon normal ürünler, StatsForecast TSB aralıklı talep, yeni lansmanlar için ortalama) 12 aylık SKU ve kategori seviyesinde tahmin üreten uçtan uca bir çözüm geliştirdim. Otomatik ürün segmentasyonu, kullanımdan kalkma tespiti, kapsamlı özellik mühendisliği, özel RWMAPE metriği ve hiyerarşik toplama gerçekleştirdim. Üretim seviyesinde pipeline ile en iyi çözümler arasında yer aldım.">
+                    Participated in a demand forecasting datathon organized for a leading European home appliances manufacturer. Developed a complete end-to-end solution that generates 12-month SKU and category-level forecasts using a hybrid approach: AutoGluon for regular products, StatsForecast TSB for intermittent demand, and simple mean for new launches. Implemented automatic product segmentation, phase-out detection, extensive feature engineering, custom RWMAPE metric, and hierarchical aggregation. Ranked among the top solutions with a production-ready pipeline.
+                </p>
+            </div>
+            <div class="modal-footer border-top-0">
+                <a href="https://github.com/kaganmart9/demand-forecasting-challenge" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <i class="fab fa-github me-1"></i> 
+                    <span data-lang-en="View on GitHub" data-lang-tr="GitHub'da Görüntüle">View on GitHub</span>
+                </a>
+                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal" data-lang-en="Close" data-lang-tr="Kapat">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="modal fade" id="projectModalPharma" tabindex="-1" aria-labelledby="projectModalPharmaLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content bg-dark">
@@ -79,12 +135,10 @@
             </div>
             <div class="modal-body">
                 <img src="assets/img/streamlit_1.jpg" class="img-fluid mb-3 rounded shadow" alt="Pharmaceutical Sales Forecasting">
-                
                 <p class="fw-bold text-primary" data-lang-en="Technologies:" data-lang-tr="Kullanılan Teknolojiler:">Technologies:</p>
                 <p>Python, Pandas, NumPy, Scikit-learn, Matplotlib/Seaborn, Time Series Analysis Libraries</p>
-                
                 <p class="fw-bold text-primary" data-lang-en="Description:" data-lang-tr="Açıklama:">Description:</p>
-                <p data-lang-en="This project implements a comprehensive data science pipeline to forecast pharmaceutical sales volume. The core challenge was modeling historical sales data subject to external factors and complex seasonality. The pipeline included rigorous Data Preprocessing (handling missing values, cleaning outliers), Exploratory Data Analysis (EDA) to identify trends and seasonality, Feature Engineering to prepare the time-series data, and Model Training & Evaluation to achieve the highest predictive accuracy. The final predictive model is available as a functional Streamlit application for interactive demonstration." data-lang-tr="Bu proje, farmasötik satış hacmini tahmin etmek için kapsamlı bir veri bilimi süreci uygular. Temel zorluk, harici faktörlere ve karmaşık mevsimselliğe tabi geçmiş satış verilerini modellemekti. Süreç, titiz bir Veri Ön İşleme (kayıp değer, aykırı değer temizliği), eğilim ve mevsimselliği belirlemeye yönelik Keşifsel Veri Analizi (EDA), zaman serisi verilerini hazırlamak için Özellik Mühendisliği ve en yüksek tahmine dayalı doğruluğu elde etmek için Model Eğitimi & Değerlendirmesi adımlarını içerdi. Nihai tahmin modeli, etkileşimli gösterim için çalışan bir Streamlit uygulaması olarak sunulmuştur.">
+                <p data-lang-en="This project implements a comprehensive data science pipeline to forecast pharmaceutical sales volume. The core challenge was modeling historical sales data subject to external factors and complex seasonality. The pipeline included rigorous Data Preprocessing (handling missing values, cleaning outliers), Exploratory Data Analysis (EDA) to identify trends and seasonality, Feature Engineering to prepare the time-series data, and Model Training & Evaluation to achieve the highest predictive accuracy. The final predictive model is available as a functional Streamlit application for interactive demonstration." data-lang-tr="Bu proje, farmasötik satış hacmini tahmin etmek için kapsamlı bir veri bilimi süreci uygular. Temel zorluk, harici harici faktörlere ve karmaşık mevsimselliğe tabi geçmiş satış verilerini modellemekti. Süreç, titiz bir Veri Ön İşleme (kayıp değer, aykırı değer temizliği), eğilim ve mevsimselliği belirlemeye yönelik Keşifsel Veri Analizi (EDA), zaman serisi verilerini hazırlamak için Özellik Mühendisliği ve en yüksek tahmine dayalı doğruluğu elde etmek için Model Eğitimi & Değerlendirmesi adımlarını içerdi. Nihai tahmin modeli, etkileşimli gösterim için çalışan bir Streamlit uygulaması olarak sunulmuştur.">
                     This project implements a comprehensive data science pipeline to forecast pharmaceutical sales volume. The core challenge was modeling historical sales data subject to external factors and complex seasonality. The pipeline included rigorous Data Preprocessing (handling missing values, cleaning outliers), Exploratory Data Analysis (EDA) to identify trends and seasonality, Feature Engineering to prepare the time-series data, and Model Training & Evaluation to achieve the highest predictive accuracy. The final predictive model is available as a functional Streamlit application for interactive demonstration.
                 </p>
             </div>
@@ -141,8 +195,8 @@
                 <p class="fw-bold text-primary" data-lang-en="Technologies:" data-lang-tr="Kullanılan Teknolojiler:">Technologies:</p>
                 <p>Python, Jupyter Notebook, Pandas, Numpy, Seaborn, Matplotlib</p>
                 <p class="fw-bold text-primary" data-lang-en="Description:" data-lang-tr="Açıklama:">Description:</p>
-                <p data-lang-en="Explored factors influencing passenger satisfaction using Python.Analyzed correlations between service categories and overall satisfaction, as well as the impact of age and gender demographics.Applied data cleaning, statistical analysis, and visualization to uncover key satisfaction drivers." data-lang-tr="Python ile yolcu memnuniyetini etkileyen unsurları analiz edildi.Hizmet gruplarının genel memnuniyetle korelasyonunu, ayrıca yaş ve cinsiyet gibi demografik değişkenlerin etkisi incelendi.Veri temizleme, istatistiksel analiz ve görselleştirmelerle memnuniyetin temel belirleyicileri ortaya çıkarıldı.">
-                    Explored factors influencing passenger satisfaction using Python.Analyzed correlations between service categories and overall satisfaction, as well as the impact of age and gender demographics.Applied data cleaning, statistical analysis, and visualization to uncover key satisfaction drivers.
+                <p data-lang-en="Explored factors influencing passenger satisfaction using Python. Analyzed correlations between service categories and overall satisfaction, as well as the impact of age and gender demographics. Applied data cleaning, statistical analysis, and visualization to uncover key satisfaction drivers." data-lang-tr="Python ile yolcu memnuniyetini etkileyen unsurları analiz edildi. Hizmet gruplarının genel memnuniyetle korelasyonunu, ayrıca yaş ve cinsiyet gibi demografik değişkenlerin etkisi incelendi. Veri temizleme, istatistiksel analiz ve görselleştirmelerle memnuniyetin temel belirleyicileri ortaya çıkarıldı.">
+                    Explored factors influencing passenger satisfaction using Python. Analyzed correlations between service categories and overall satisfaction, as well as the impact of age and gender demographics. Applied data cleaning, statistical analysis, and visualization to uncover key satisfaction drivers.
                 </p>
             </div>
             <div class="modal-footer border-top-0">
