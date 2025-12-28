@@ -53,21 +53,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="col">
-            <div class="card h-100 shadow-sm border-0 project-card" data-bs-toggle="modal" data-bs-target="#projectModal1">
-                <img src="assets/img/project-telemetry.jpg" class="card-img-top" alt="Mobile Telemetry App">
-                <div class="card-body">
-                    <h5 class="card-title text-primary fw-bold" data-lang-en="Mobile Telemetry Application" data-lang-tr="Mobil Telemetri Uygulaması">Mobile Telemetry Application</h5>
-                    <p class="card-text text-muted" data-lang-en="Python-based real-time data collection and visualization via BLE." data-lang-tr="Python tabanlı, BLE üzerinden gerçek zamanlı veri toplama ve görselleştirme.">Python-based real-time data collection and visualization via BLE.</p>
-                </div>
-                <div class="card-footer bg-transparent border-0">
-                    <a href="https://github.com/kaganmart9/can2go-mobile" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark me-2">
-                        <i class="fab fa-github me-1"></i> GitHub
-                    </a>
-                </div>
-            </div>
-        </div>
         
         <div class="col">
             <div class="card h-100 shadow-sm border-0 project-card" data-bs-toggle="modal" data-bs-target="#projectModal2">
@@ -90,29 +75,44 @@
             </div>
         </div>
 
+        <!-- Yeni Proje: End-to-End Churn Analytics -->
         <div class="col">
-            <div class="card h-100 shadow-sm border-0 project-card" data-bs-toggle="modal" data-bs-target="#projectModalHotel">
-                <img src="assets/img/hotel-revenue-dashboard.jpg" class="card-img-top" alt="Hotel Revenue Analysis Dashboard">
+            <div class="card h-100 shadow-sm border-0 project-card" data-bs-toggle="modal" data-bs-target="#projectModalChurn">
+                <img src="assets/img/churn-overview.jpg" class="card-img-top" alt="Telco Churn Analytics Dashboard">
                 <div class="card-body">
                     <h5 class="card-title text-primary fw-bold" 
-                        data-lang-en="Hotel Revenue Analysis Dashboard" 
-                        data-lang-tr="Otel Gelir Analizi Dashboard'ı">
-                        Hotel Revenue Analysis Dashboard
+                        data-lang-en="End-to-End Telco Churn Analytics & BI Solution" 
+                        data-lang-tr="Uçtan Uca Telekom Churn Analitiği ve BI Çözümü">
+                        End-to-End Telco Churn Analytics & BI Solution
                     </h5>
                     <p class="card-text text-muted" 
-                        data-lang-en="Interactive Power BI dashboard exploring hotel booking trends, revenue (~$10.23M), ADR, and seasonality across City and Resort hotels." 
-                        data-lang-tr="City ve Resort otellerde rezervasyon trendleri, gelir (~$10.23M), ADR ve mevsimselliği inceleyen interaktif Power BI dashboard'ı.">
-                        Interactive Power BI dashboard exploring hotel booking trends, revenue (~$10.23M), ADR, and seasonality across City and Resort hotels.
+                        data-lang-en="Comprehensive BI pipeline from SQL data warehousing (Star Schema) to interactive Power BI dashboards analyzing churn patterns and MRR impact (26.54% churn rate, $139K MRR at risk)." 
+                        data-lang-tr="SQL veri ambarlamadan (Star Schema) interaktif Power BI dashboard'lara kadar kapsamlı BI pipeline'ı; churn pattern'lerini ve MRR etkisini analiz eder (%26.54 churn oranı, $139K risk altındaki MRR).">
+                        Comprehensive BI pipeline from SQL data warehousing (Star Schema) to interactive Power BI dashboards analyzing churn patterns and MRR impact (26.54% churn rate, $139K MRR at risk).
                     </p>
                 </div>
                 <div class="card-footer bg-transparent border-0">
-                    <a href="https://github.com/kaganmart9/Hotel-Revenue-Analysis-Dashboard" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark me-2">
+                    <a href="https://github.com/kaganmart9/end-to-end-churn-analytics" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark me-2">
                         <i class="fab fa-github me-1"></i> GitHub
                     </a>
                 </div>
             </div>
         </div>
         
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0 project-card" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                <img src="assets/img/project-telemetry.jpg" class="card-img-top" alt="Mobile Telemetry App">
+                <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold" data-lang-en="Mobile Telemetry Application" data-lang-tr="Mobil Telemetri Uygulaması">Mobile Telemetry Application</h5>
+                    <p class="card-text text-muted" data-lang-en="Python-based real-time data collection and visualization via BLE." data-lang-tr="Python tabanlı, BLE üzerinden gerçek zamanlı veri toplama ve görselleştirme.">Python-based real-time data collection and visualization via BLE.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                    <a href="https://github.com/kaganmart9/can2go-mobile" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark me-2">
+                        <i class="fab fa-github me-1"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -247,31 +247,32 @@
     </div>
 </div>
 
-<div class="modal fade" id="projectModalHotel" tabindex="-1" aria-labelledby="projectModalHotelLabel" aria-hidden="true">
+<!-- Yeni Modal: Churn Analytics Projesi -->
+<div class="modal fade" id="projectModalChurn" tabindex="-1" aria-labelledby="projectModalChurnLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content bg-dark">
             <div class="modal-header border-bottom-0">
-                <h5 class="modal-title text-primary" id="projectModalHotelLabel" 
-                    data-lang-en="Hotel Revenue Analysis Dashboard - Details" 
-                    data-lang-tr="Otel Gelir Analizi Dashboard'ı - Detaylar">
-                    Hotel Revenue Analysis Dashboard - Details
+                <h5 class="modal-title text-primary" id="projectModalChurnLabel" 
+                    data-lang-en="End-to-End Telco Churn Analytics & BI Solution - Details" 
+                    data-lang-tr="Uçtan Uca Telekom Churn Analitiği ve BI Çözümü - Detaylar">
+                    End-to-End Telco Churn Analytics & BI Solution - Details
                 </h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <img src="assets/img/hotel-revenue-dashboard.jpg" class="img-fluid mb-3 rounded shadow" alt="Hotel Revenue Dashboard">
+                <img src="assets/img/churn-overview.jpg" class="img-fluid mb-3 rounded shadow" alt="Telco Churn Analytics Dashboard">
 
                 <p class="fw-bold text-primary" data-lang-en="Technologies:" data-lang-tr="Kullanılan Teknolojiler:">Technologies:</p>
-                <p>Power BI, SQL, Excel, DAX</p>
+                <p>Microsoft SQL Server, T-SQL, DBeaver, Power BI Desktop, DAX, Star Schema Data Modeling</p>
 
                 <p class="fw-bold text-primary" data-lang-en="Description:" data-lang-tr="Açıklama:">Description:</p>
-                <p data-lang-en="Developed an interactive Power BI dashboard to sharpen business intelligence skills, analyzing multi-year hotel booking data (2018-2020). Integrated Excel sheets using SQL (UNION ALL for yearly data consolidation and joins for reference tables), built data models, and created DAX measures for key metrics. Visualizations include cards, donut charts for revenue splits, line charts for trends, and interactive slicers." 
-                   data-lang-tr="İş zekası becerilerini geliştirmek amacıyla interaktif bir Power BI dashboard'ı geliştirildi; çok yıllık otel rezervasyon verilerini (2018-2020) analiz etti. Excel sayfalarını SQL ile birleştirdi (yıllık veriler için UNION ALL ve referans tablolar için join'lar), veri modeli oluşturdu ve ana metrikler için DAX ölçüleri hazırladı. Görselleştirmeler arasında kartlar, gelir dağılımı için donut chart'lar, trendler için çizgi grafikler ve interaktif slicer'lar yer alıyor.">
-                    Developed an interactive Power BI dashboard to sharpen business intelligence skills, analyzing multi-year hotel booking data (2018-2020). Integrated Excel sheets using SQL (UNION ALL for yearly data consolidation and joins for reference tables), built data models, and created DAX measures for key metrics. Visualizations include cards, donut charts for revenue splits, line charts for trends, and interactive slicers.
+                <p data-lang-en="Developed a full end-to-end business intelligence solution for telecom customer churn analysis using the IBM Telco dataset. Built a robust ETL pipeline: ingested raw CSV data, performed cleaning and feature engineering (e.g., tenure cohort segmentation), and implemented a star schema data warehouse with dimension (customer, plan, payment) and fact tables. Created interactive Power BI dashboards with DAX-calculated KPIs revealing 26.54% overall churn rate, $139K churned MRR (30.5% of total), and high-risk segments (new customers, Fiber Optic users, Electronic Check payers). Provided actionable retention recommendations based on segment-specific insights."
+                   data-lang-tr="IBM Telco veri setini kullanarak telekom müşteri churn analizi için tam uçtan uca bir iş zekası çözümü geliştirdim. Sağlam bir ETL pipeline'ı oluşturdum: ham CSV verisini yükleme, temizlik ve özellik mühendisliği (ör. tenure kohort segmentasyonu), boyut (customer, plan, payment) ve fact tablolarıyla star schema veri ambarı implementasyonu. DAX ile hesaplanan KPI'larla interaktif Power BI dashboard'lar hazırladım: %26.54 genel churn oranı, $139K churn edilmiş MRR (toplamın %30.5'i) ve yüksek riskli segmentler (yeni müşteriler, Fiber Optic kullanıcıları, Electronic Check ödeyenler). Segment bazlı içgörülerle uygulanabilir tutundurma önerileri sundum.">
+                    Developed a full end-to-end business intelligence solution for telecom customer churn analysis using the IBM Telco dataset. Built a robust ETL pipeline: ingested raw CSV data, performed cleaning and feature engineering (e.g., tenure cohort segmentation), and implemented a star schema data warehouse with dimension (customer, plan, payment) and fact tables. Created interactive Power BI dashboards with DAX-calculated KPIs revealing 26.54% overall churn rate, $139K churned MRR (30.5% of total), and high-risk segments (new customers, Fiber Optic users, Electronic Check payers). Provided actionable retention recommendations based on segment-specific insights.
                 </p>
             </div>
             <div class="modal-footer border-top-0">
-                <a href="https://github.com/kaganmart9/Hotel-Revenue-Analysis-Dashboard" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <a href="https://github.com/kaganmart9/end-to-end-churn-analytics" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                     <i class="fab fa-github me-1"></i> 
                     <span data-lang-en="View on GitHub" data-lang-tr="GitHub'da Görüntüle">View on GitHub</span>
                 </a>
